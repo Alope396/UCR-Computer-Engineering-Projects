@@ -1,0 +1,70 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001df76a62740 .scope module, "floatToFixed" "floatToFixed" 2 9;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst";
+    .port_info 2 /INPUT 32 "float";
+    .port_info 3 /INPUT 5 "fixpointpos";
+    .port_info 4 /OUTPUT 32 "result";
+o000001df76a96fd8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001df76a62e10_0 .net "clk", 0 0, o000001df76a96fd8;  0 drivers
+v000001df76a63030_0 .var "exp", 7 0;
+o000001df76a97038 .functor BUFZ 5, C4<zzzzz>; HiZ drive
+v000001df76a628d0_0 .net "fixpointpos", 4 0, o000001df76a97038;  0 drivers
+o000001df76a97068 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v000001df76a62970_0 .net "float", 31 0, o000001df76a97068;  0 drivers
+v000001df76a62a10_0 .var "result", 31 0;
+o000001df76a970c8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001df76a62ab0_0 .net "rst", 0 0, o000001df76a970c8;  0 drivers
+E_000001df769dc480 .event anyedge, v000001df76a62970_0, v000001df76a62a10_0, v000001df76a63030_0, v000001df76a628d0_0;
+    .scope S_000001df76a62740;
+T_0 ;
+    %wait E_000001df769dc480;
+    %pushi/vec4 1, 0, 1;
+    %ix/load 4, 23, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v000001df76a62a10_0, 4, 1;
+    %load/vec4 v000001df76a62970_0;
+    %parti/s 23, 0, 2;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v000001df76a62a10_0, 4, 23;
+    %load/vec4 v000001df76a62970_0;
+    %parti/s 8, 23, 6;
+    %subi 127, 0, 8;
+    %store/vec4 v000001df76a63030_0, 0, 8;
+    %load/vec4 v000001df76a62a10_0;
+    %pushi/vec4 23, 0, 32;
+    %load/vec4 v000001df76a63030_0;
+    %pad/u 32;
+    %load/vec4 v000001df76a628d0_0;
+    %pad/u 32;
+    %add;
+    %sub;
+    %ix/vec4 4;
+    %shiftr 4;
+    %store/vec4 v000001df76a62a10_0, 0, 32;
+    %load/vec4 v000001df76a62970_0;
+    %parti/s 1, 31, 6;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %load/vec4 v000001df76a62a10_0;
+    %inv;
+    %addi 1, 0, 32;
+    %store/vec4 v000001df76a62a10_0, 0, 32;
+T_0.0 ;
+    %jmp T_0;
+    .thread T_0, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "floatToFixed.v";
