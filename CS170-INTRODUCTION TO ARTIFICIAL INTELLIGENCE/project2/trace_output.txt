@@ -1,0 +1,6 @@
+Welcome to Ryan Le (rle026), Aidan Lopez (alope396), Brandon Tran (btran117), and Vy Vo (vvo025) Project 2.
+Select feature algorithm: 
+1. Forward Selection 
+2. Backward Elimination 
+3. Special Algorithm
+Select a valid search method!
