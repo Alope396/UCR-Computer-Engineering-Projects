@@ -1,0 +1,65 @@
+.outerContainer {
+    border: solid black 1px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: start;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.container {
+    text-align: start;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.name {
+    font-size: 18px;
+    width: 93%;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 18px;
+    width: 93%;
+    margin-bottom: 15px;
+}
+
+.submit {
+    font-size: 18px;
+    color: white;
+    background-color: #1DA1F2;
+
+}
+
+.post {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: start;
+    font-size: 18px;
+}
+
+.postName {
+    color: #1DA1F2;
+    font-size: 18px;
+}
+
+.replyButton {
+    height: 35px;
+    width: auto;
+}
+
+.upvote{
+    height: 35px;
+    width: auto;
+}
+
+.downvote {
+    height: 35px;
+    width: auto;
+}
+

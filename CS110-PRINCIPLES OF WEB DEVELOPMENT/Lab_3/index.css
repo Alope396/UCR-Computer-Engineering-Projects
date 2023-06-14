@@ -1,0 +1,323 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+/* Add a black background color to the top navigation */
+.topnav {
+  position: fixed;
+  top: 0; 
+  right: 0;
+  left: 0;
+  height: 46px;
+  z-index: 100;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* Style the links inside the navigation bar */
+
+.navTabs{
+  padding-left: 10%;
+}
+
+.navTabs a {
+  float: left;
+  color: grey; /*text color*/
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.navTabs a:hover {
+  color: 	#4AB3F4;
+  border-bottom: 3px solid 	#4AB3F4;
+}
+
+.twitterLogo {
+  padding: 14px 16px;
+  position:fixed;
+  right: 50%;
+}
+
+.tweetBtn {
+  padding: 14px 16px;
+  position:fixed;
+  right: 2%;
+}
+
+.tweetBtn a{
+  background-color: #4AB3F4;
+  color: white;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 5px 16px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom: none;
+}
+
+/* Add a top margin to avoid content overlay */
+.main {
+  margin-top: 60px;
+  max-width: 1190px;
+  margin: 56px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile {
+  max-width: 290px;
+  background-color: white;
+  width: 290px;
+  height: 250px;
+}
+
+.cover {
+  z-index: 1;
+  position: absolute;
+  background-color: black;
+  height: 100px;
+  width: 290px;
+  max-width: 290px;
+  justify-content: center;
+}
+
+#banner {
+  height: auto;
+  width: 200px;
+  padding-top: 13%;
+  padding-left: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+#test {
+  padding-left: -5%;
+}
+
+.picture {
+  z-index: 2;
+  position: relative;
+  top: 30%;
+  padding-left: 5%;
+  justify-content: right;
+}
+
+#profilePicture {
+  border-radius: 100%;
+}
+
+.loginName {
+  padding-left: 5%;
+  font-weight: bold;
+}
+
+.loginName:hover {
+  text-decoration: underline;
+}
+
+.loginHandle {
+  padding-left: 5%;
+  color: gray;
+}
+
+.stats {
+  z-index: 2;
+  position: relative;
+  padding-top: 30%;
+  padding-left: 10%;
+}
+
+.pTweets {
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: gray;
+}
+
+.pTweetsStats {
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4AB3F4;
+}
+
+.pFollowing {
+  padding-left: 5%;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: gray;
+}
+
+.pFollowingStats {
+  padding-left: 10%;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4AB3F4;
+}
+
+.pFollowers {
+  padding-left: 5%;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: gray;
+}
+
+.pFollowersStats {
+  padding-left: 19%;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4AB3F4;
+}
+
+@media (max-width: 1200px) {
+  .discovery{
+    display: none;
+  }
+}
+
+.discovery {
+  height: 250px;
+}
+
+.tweet {
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 51px;
+  background-color: white;
+  width: auto;
+  max-width: 500px;
+  padding: 7px;
+}
+
+.tweetName {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* .tweetHandle {
+  color: gray;
+  padding-top: 10px;
+  padding-right: 5px;
+  float: left;
+} */
+
+.tweetDate {
+  color: gray;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+.tweetPic {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-right: 10px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
+.tweetContent {
+  padding-top: 7px;
+  padding-left: 5px;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.discovery{
+  width: 290px;
+  background-color: white;
+  overflow: hidden;
+}
+.discBanner {
+  padding:20px;
+  font-weight: bold;
+}
+
+.sugProfile {
+  padding-bottom: 10px;
+}
+
+.linguiniProfile {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #E6ECF0;
+  font-size: 14px;
+}
+
+.linguiniPic {
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.name{
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.username {
+  vertical-align: top;
+  color: grey;
+}
+
+.followBtn {
+  position:absolute;
+  top: 50%;
+  left: 30%;
+  color: #4AB3F4;
+  padding: 5px 20px;
+  border: 1px solid;
+  border-color:#4AB3F4;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Lab 3 */
+
+/* Lab 3 */
+
+.userinput{
+  padding-bottom:10px;
+}
+
+#input {
+  width: 430px;
+  padding: 10px 40px;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-image: url('images/searchicon.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 20px;
+}
+
+#toggle {
+  padding: 100px;
+  text-align: right;
+}

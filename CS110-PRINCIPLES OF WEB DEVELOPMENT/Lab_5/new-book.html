@@ -1,0 +1,49 @@
+<!-- Aidan Lopez -->
+<!-- NetID: alope396 -->
+<!-- SID: 862162380 -->
+<!-- Ryan Le -->
+<!-- NetID: rle026 -->
+<!-- SID: 862169037 -->
+<!DOCTYPE html>
+<html lang="en">
+    <div class="container">
+        <hr>
+        <h1>Create New Book</h1>
+        <hr>
+
+        <form action="http://localhost:3000/book" method="POST">
+            <div class="form-group">
+                <label for="ISBN">ISBN</label>
+                <input class="form-control" name="isbn">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input class="form-control" name="title">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input class="form-control" name="author">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="Published Date">Published Date</label>
+                <input class="form-control" name="publish_date">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="Publisher">Publisher</label>
+                <input class="form-control" name="publisher">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="Number of Pages">Number of Pages</label>
+                <input class="form-control" name="numOfPages">
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primrary">Submit</button>
+            <button type="button" onclick="location.href='/book-list'">Cancel</button>
+        </form>
+    </div>
+</html>

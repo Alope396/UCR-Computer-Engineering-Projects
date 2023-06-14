@@ -1,0 +1,23 @@
+.reply {
+    display: flexbox;
+    width: auto;
+    margin-left: 5%;
+}
+
+.top {
+    display: inline-block;
+}
+
+.ratingWrap {
+    text-align: center;
+    float:right;
+}
+
+.newReplyName{
+    color: #1DA1F2;
+    font-size: 18px;
+}
+
+.newReplyText {
+    font-size: 18px;
+}

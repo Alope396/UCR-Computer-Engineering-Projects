@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <h1>Tic Tac Toe</h1>
+    <h2>Scores: <span class="score"></span></h2>
+    <h3>Current mode selected: <span class="mode">Please choose a mode to start</span></h3>
+    <h3>Its your turn, <span class="display_player"></span>.</h3>
+    <h3>Timer: <span class="timer"></span></h3>
+    <h3>Time left: <span class="timeLeft"></span></h3>
+
+    <div class="game_board">
+      <div class="row" id = "row_1">
+        <div class="one" id = "1" is_checked="false"><span class="xo"></span></div>
+        <div class="two" id = "2" is_checked="false"><span class="xo"></span></div>
+        <div class="three" id = "3" is_checked="false"><span class="xo"></span></div>
+      </div>
+      <div class="row" id = "row_2">
+        <div class="four" id = "4" is_checked="false"><span class="xo"></span></div>
+        <div class="five" id = "5" is_checked="false"><span class="xo"></span></div>
+        <div class="six" id = "6" is_checked="false"><span class="xo"></span></div>
+      </div>
+      <div class="row" id = "row_3">
+        <div class="seven" id = "7" is_checked="false"><span class="xo"></span></div>
+        <div class="eight" id = "8" is_checked="false"><span class="xo"></span></div>
+        <div class="nine" id = "9" is_checked="false"><span class="xo"></span></div>
+      </div>
+    </div>
+    <button class="ai_game">Play Against AI</button>
+    <button class="vs_game">2 Players</button>
+    <button class="new_game">New Game</button>
+    <button class="reset">Reset</button>
+    <script src="main.js"></script>
+  </body>
+
+
+</html>

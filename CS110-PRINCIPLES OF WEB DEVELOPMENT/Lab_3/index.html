@@ -1,0 +1,116 @@
+<!-- Aidan Lopez -->
+<!-- NetID: alope396 -->
+<!-- SID: 862162380 -->
+<!-- Ryan Le -->
+<!-- NetID: rle026 -->
+<!-- SID: 862169037 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <title>Twitter</title>
+  <header>
+    <div class="topnav">
+      <div class="navTabs">
+        <a href="#home">Home</a>
+        <a href="#moments">Moments</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#messages">Messages</a>
+      </div>
+      <div class="twitterLogo">
+        <img id="logo" src="images/twitter-logo.png" alt="Twitter logo" height="22" width="22">
+      </div>
+      <div class="tweetBtn">
+        <a href="#tweet">Tweet</a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <!-- TODO: Create HTML elements for Twitter mockup inside body -->
+    <!-- Content Wrapper -->
+    <div class="main">
+
+      <!-- Profile box -->
+      <div class="profile">
+
+        <div class="cover">
+          <img id="banner"
+          src="images/ratatouille-banner.png"
+          alt="Profile banner">
+        </div>
+
+        <div class="picture">
+          <img id="profilePicture"
+          src="images/ratatouille.jpg"
+          alt="Profile picture"
+          height="75" width="75"
+          style="border: 2px solid #ffffff; float:left">
+          <br>
+          <br>
+          <a class="loginName">Remy</a>
+          <br>
+          <a class="loginHandle">@remy</a>
+        </div>
+
+        <div class="stats">
+          <a class="pTweets">Tweets</a>
+          <a class="pFollowing">Following</a>
+          <a class="pFollowers">Followers</a>
+          <br>
+          <br>
+          <a class="pTweetsStats">5049</a>
+          <a class="pFollowingStats">324</a>
+          <a class="pFollowersStats">809</a>
+        </div>
+
+      </div>
+
+      <!-- Tweets -->
+      <div class="tweets">
+        <div class="search">
+          <form class="userinput" >
+            <input type="text" id="input" class ="input" placeholder="Search in tweets" onkeyup="search()">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Enable</label>
+          </form>
+        </div>
+        <!-- <div class="tweet">
+          <img class="tweetPic" src="images/ratatouille.jpg" alt="Profile picture" style="float: left;">
+          <a class="tweetName" style="float: left;">Remy</a>
+          <a class="tweetHandle" style="float: left;">@remy</a>
+          <a class="tweetDate" style="float: left;">Nov 19</a>
+          <br>
+          <br>
+          <a class="tweetContent">Let's make some pasta!</a>
+          <br>
+        </div> -->
+      </div>
+
+      <!-- Discovery -->
+      <div class="discovery">
+        <div class="discBanner">
+          <a>Who to follow</a>
+        </div>
+        <div class="sugProfile">
+          <div class="linguiniProfile">
+            <img class="linguiniPic" src="images/linguini.png" alt="Linguini profile picture">
+            <a class="name">Linguini</a>
+            <a class="username">@linguini</a>
+            <a class="followBtn">Follow</a>
+          </div>
+        </div>
+        <div class="sugProfile">
+          <div class="linguiniProfile">
+            <img class="linguiniPic" src="images/ratatouille.jpg" alt="Linguini profile picture">
+            <a class="name"></a>
+            <a class="username"></a>
+            <a class="followBtn">Follow</a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
